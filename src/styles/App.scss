@@ -1,0 +1,44 @@
+html,body{
+  width:100%;
+  height:100%;
+  background-color:#222;//声明背景色，浅黑色
+}
+
+.content {
+  width:100%;
+  height:100%;
+}
+
+/*stage -- start */
+//修饰舞台结构
+.stage{
+  position:relative;//设置一个position的属性，方便我们定位controller nav
+
+  width:100%;
+  height:100%;//设置为680px
+
+}
+/*stage -- end */
+
+//image区域
+/*image -- start */
+.img-sec{
+  postion:relative;//方便在后面定位其中的图片
+  width:100%;
+  height:100%;
+  overflow:hidden;//图片超出内容则隐藏，页面布局中占据空间
+
+  background-color:#ddd;
+}
+/*image -- end */
+
+/*controller -- start */
+.controller-nav{
+  position:absulote;//绝对定位到舞台底部
+  left:0;
+  bottom:30px;
+  z-index:101;//10的二次方的zindex
+  width:100%;
+  text-align:center;
+}
+/*controller -- end */
